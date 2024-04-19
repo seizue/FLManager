@@ -238,6 +238,97 @@ namespace FLManager
         {
             button_Generate.Visible = true;
             buttonSaveUpdate.Visible = false;
+
+            // Check if a cell is selected
+            if (licenseGrid.SelectedCells.Count > 0)
+            {
+                int selectedRowIndex = licenseGrid.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = licenseGrid.Rows[selectedRowIndex];
+
+                // Get input values
+                string name = textBoxName.Text;
+                int experienceDays = Convert.ToInt32(textBoxExperienceDays.Text);
+                string email = textBoxEmail.Text;
+                string selectedPlan = comboBoxPlan.SelectedItem.ToString();
+
+                // Update the selected row with new data
+                selectedRow.Cells["PName"].Value = name;
+                selectedRow.Cells["PExperienceDays"].Value = experienceDays;
+                selectedRow.Cells["PEmail"].Value = email;
+                selectedRow.Cells["PPlan"].Value = selectedPlan;
+
+                // Recalculate expiry date
+                DateTime currentDate = DateTime.Now;
+                DateTime newExpiryDate = currentDate.AddDays(experienceDays);
+                selectedRow.Cells["PExpiry"].Value = newExpiryDate.ToString("yyyy-MM-dd");
+
+                // Save updated data to JSON file
+                UpdateDataToJsonFile();
+
+                // Hide Save Update button and show Generate button
+                button_Generate.Visible = true;
+                buttonSaveUpdate.Visible = false;
+
+                // Clear input fields
+                ClearInputFields();
+            }
+            else
+            {
+                MessageBox.Show("Please select a cell to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+    
+
+        private void UpdateDataToJsonFile()
+        {
+            // Get AppData directory path
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            // Create directory if it doesn't exist
+            string directoryPath = Path.Combine(appDataPath, "FLManager");
+            Directory.CreateDirectory(directoryPath);
+
+            // Create file path
+            string filePath = Path.Combine(directoryPath, "generated_data.json");
+
+            // Initialize productList to store existing data
+            List<ProductData> productList = new List<ProductData>();
+
+            // Check if the JSON file exists
+            if (File.Exists(filePath))
+            {
+                // Read existing data from the JSON file
+                string existingData = File.ReadAllText(filePath);
+
+                // Deserialize existing JSON data to list of ProductData objects
+                productList = JsonConvert.DeserializeObject<List<ProductData>>(existingData);
+
+                // Update the corresponding entry in the productList
+                int selectedRowIndex = licenseGrid.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = licenseGrid.Rows[selectedRowIndex];
+
+                // Find the corresponding product in the productList and update its properties
+                string licenseCode = selectedRow.Cells["PLicenseCode"].Value.ToString();
+                var productToUpdate = productList.Find(product => product.product_LicenseCode == licenseCode);
+                if (productToUpdate != null)
+                {
+                    productToUpdate.product_Name = selectedRow.Cells["PName"].Value.ToString();
+                    productToUpdate.product_ExperienceDays = Convert.ToInt32(selectedRow.Cells["PExperienceDays"].Value);
+                    productToUpdate.product_Plan = selectedRow.Cells["PPlan"].Value.ToString();
+                    productToUpdate.product_Email = selectedRow.Cells["PEmail"].Value.ToString();
+                }
+
+                // Serialize updated data to JSON
+                string updatedData = JsonConvert.SerializeObject(productList, Formatting.Indented);
+
+                // Write updated data to the JSON file
+                File.WriteAllText(filePath, updatedData);
+            }
+            else
+            {
+                MessageBox.Show("JSON file not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void LoadDataFromJsonFile(string filePath)
@@ -289,6 +380,7 @@ namespace FLManager
                 MessageBox.Show("JSON file not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void Main_Load(object sender, EventArgs e)
         {
