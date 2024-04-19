@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelNav = new MetroFramework.Controls.MetroPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSettings = new System.Windows.Forms.Button();
@@ -69,26 +69,25 @@
             this.checkBoxActive = new MetroFramework.Controls.MetroCheckBox();
             this.panelProductGrid = new System.Windows.Forms.Panel();
             this.productGrid = new MetroFramework.Controls.MetroGrid();
-            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelLicense = new MetroFramework.Controls.MetroPanel();
+            this.buttonSaveUpdate = new System.Windows.Forms.Button();
             this.buttonDownload = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.buttonUpdateLi = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.licenseGrid = new MetroFramework.Controls.MetroGrid();
+            this.PName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PLicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PLicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PExpiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -112,14 +111,15 @@
             this.textBoxName = new MetroFramework.Controls.MetroTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.buttonProductDownload = new System.Windows.Forms.Button();
-            this.PName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PLicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PLicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PExpiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonSaveUpdate = new System.Windows.Forms.Button();
+            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
@@ -528,43 +528,43 @@
             this.productGrid.AllowUserToAddRows = false;
             this.productGrid.AllowUserToResizeColumns = false;
             this.productGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.productGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.productGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.productGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
             this.productGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.productGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productGrid.ColumnHeadersHeight = 48;
             this.productGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.product_Name,
             this.product_ExperienceDays,
-            this.product_Plan,
             this.product_LicenseCode,
             this.product_LicenseKey,
-            this.product_Status,
+            this.product_Plan,
             this.product_Expiry,
             this.product_Email,
-            this.product_Created});
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.productGrid.DefaultCellStyle = dataGridViewCellStyle40;
+            this.product_Created,
+            this.product_Status});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productGrid.DefaultCellStyle = dataGridViewCellStyle4;
             this.productGrid.EnableHeadersVisualStyles = false;
             this.productGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.productGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -572,88 +572,27 @@
             this.productGrid.MultiSelect = false;
             this.productGrid.Name = "productGrid";
             this.productGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.productGrid.RowHeadersWidth = 5;
             this.productGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            this.productGrid.RowsDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            this.productGrid.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.productGrid.RowTemplate.Height = 23;
             this.productGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.productGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.productGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.productGrid.Size = new System.Drawing.Size(781, 406);
             this.productGrid.TabIndex = 390;
             this.productGrid.UseCustomBackColor = true;
             this.productGrid.UseCustomForeColor = true;
             this.productGrid.UseStyleColors = true;
-            // 
-            // product_Name
-            // 
-            this.product_Name.FillWeight = 80.45901F;
-            this.product_Name.HeaderText = "Product Name";
-            this.product_Name.Name = "product_Name";
-            this.product_Name.Width = 170;
-            // 
-            // product_ExperienceDays
-            // 
-            this.product_ExperienceDays.HeaderText = "Experience Days";
-            this.product_ExperienceDays.Name = "product_ExperienceDays";
-            this.product_ExperienceDays.Width = 134;
-            // 
-            // product_Plan
-            // 
-            this.product_Plan.HeaderText = "Plan";
-            this.product_Plan.Name = "product_Plan";
-            // 
-            // product_LicenseCode
-            // 
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.Padding = new System.Windows.Forms.Padding(10, 0, 4, 2);
-            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle39;
-            this.product_LicenseCode.FillWeight = 14F;
-            this.product_LicenseCode.HeaderText = "License Code";
-            this.product_LicenseCode.Name = "product_LicenseCode";
-            this.product_LicenseCode.Width = 200;
-            // 
-            // product_LicenseKey
-            // 
-            this.product_LicenseKey.FillWeight = 10F;
-            this.product_LicenseKey.HeaderText = "License Key";
-            this.product_LicenseKey.Name = "product_LicenseKey";
-            this.product_LicenseKey.Width = 200;
-            // 
-            // product_Status
-            // 
-            this.product_Status.FillWeight = 80.45901F;
-            this.product_Status.HeaderText = "Status";
-            this.product_Status.Name = "product_Status";
-            this.product_Status.Width = 108;
-            // 
-            // product_Expiry
-            // 
-            this.product_Expiry.HeaderText = "Expiry";
-            this.product_Expiry.Name = "product_Expiry";
-            // 
-            // product_Email
-            // 
-            this.product_Email.FillWeight = 80.45901F;
-            this.product_Email.HeaderText = "Email";
-            this.product_Email.Name = "product_Email";
-            this.product_Email.Width = 170;
-            // 
-            // product_Created
-            // 
-            this.product_Created.FillWeight = 80.45901F;
-            this.product_Created.HeaderText = "Created";
-            this.product_Created.Name = "product_Created";
-            this.product_Created.Width = 108;
             // 
             // panel14
             // 
@@ -726,6 +665,26 @@
             this.panelLicense.VerticalScrollbarBarColor = true;
             this.panelLicense.VerticalScrollbarHighlightOnWheel = false;
             this.panelLicense.VerticalScrollbarSize = 10;
+            // 
+            // buttonSaveUpdate
+            // 
+            this.buttonSaveUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.buttonSaveUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonSaveUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
+            this.buttonSaveUpdate.FlatAppearance.BorderSize = 2;
+            this.buttonSaveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaveUpdate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7F, System.Drawing.FontStyle.Bold);
+            this.buttonSaveUpdate.ForeColor = System.Drawing.Color.MintCream;
+            this.buttonSaveUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSaveUpdate.Location = new System.Drawing.Point(293, 179);
+            this.buttonSaveUpdate.Name = "buttonSaveUpdate";
+            this.buttonSaveUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.buttonSaveUpdate.Size = new System.Drawing.Size(237, 28);
+            this.buttonSaveUpdate.TabIndex = 446;
+            this.buttonSaveUpdate.Text = "SAVE";
+            this.buttonSaveUpdate.UseVisualStyleBackColor = false;
+            this.buttonSaveUpdate.Visible = false;
+            this.buttonSaveUpdate.Click += new System.EventHandler(this.buttonSaveUpdate_Click);
             // 
             // buttonDownload
             // 
@@ -804,24 +763,24 @@
             this.licenseGrid.AllowUserToAddRows = false;
             this.licenseGrid.AllowUserToResizeColumns = false;
             this.licenseGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.licenseGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.licenseGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.licenseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
             this.licenseGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.licenseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.licenseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.licenseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.licenseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.licenseGrid.ColumnHeadersHeight = 48;
             this.licenseGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PName,
@@ -831,14 +790,14 @@
             this.PPlan,
             this.PExpiry,
             this.PEmail});
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.licenseGrid.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.licenseGrid.DefaultCellStyle = dataGridViewCellStyle10;
             this.licenseGrid.EnableHeadersVisualStyles = false;
             this.licenseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.licenseGrid.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -846,19 +805,19 @@
             this.licenseGrid.MultiSelect = false;
             this.licenseGrid.Name = "licenseGrid";
             this.licenseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.licenseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.licenseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.licenseGrid.RowHeadersWidth = 5;
             this.licenseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            this.licenseGrid.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            this.licenseGrid.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.licenseGrid.RowTemplate.Height = 23;
             this.licenseGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.licenseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -866,6 +825,55 @@
             this.licenseGrid.TabIndex = 390;
             this.licenseGrid.UseCustomBackColor = true;
             this.licenseGrid.UseCustomForeColor = true;
+            // 
+            // PName
+            // 
+            this.PName.FillWeight = 10F;
+            this.PName.HeaderText = "Product Name";
+            this.PName.Name = "PName";
+            this.PName.Width = 170;
+            // 
+            // PExperienceDays
+            // 
+            this.PExperienceDays.FillWeight = 14F;
+            this.PExperienceDays.HeaderText = "Experience Days";
+            this.PExperienceDays.Name = "PExperienceDays";
+            this.PExperienceDays.Width = 140;
+            // 
+            // PLicenseCode
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.PLicenseCode.DefaultCellStyle = dataGridViewCellStyle9;
+            this.PLicenseCode.FillWeight = 14F;
+            this.PLicenseCode.HeaderText = "License Code";
+            this.PLicenseCode.Name = "PLicenseCode";
+            this.PLicenseCode.Width = 250;
+            // 
+            // PLicenseKey
+            // 
+            this.PLicenseKey.FillWeight = 13F;
+            this.PLicenseKey.HeaderText = "License Key";
+            this.PLicenseKey.Name = "PLicenseKey";
+            this.PLicenseKey.Width = 250;
+            // 
+            // PPlan
+            // 
+            this.PPlan.FillWeight = 120F;
+            this.PPlan.HeaderText = "Plan";
+            this.PPlan.Name = "PPlan";
+            this.PPlan.Width = 120;
+            // 
+            // PExpiry
+            // 
+            this.PExpiry.HeaderText = "Expiry";
+            this.PExpiry.Name = "PExpiry";
+            this.PExpiry.Width = 150;
+            // 
+            // PEmail
+            // 
+            this.PEmail.HeaderText = "Email";
+            this.PEmail.Name = "PEmail";
+            this.PEmail.Width = 250;
             // 
             // panel21
             // 
@@ -1231,74 +1239,66 @@
             this.buttonProductDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProductDownload.UseVisualStyleBackColor = true;
             // 
-            // PName
+            // product_Name
             // 
-            this.PName.FillWeight = 10F;
-            this.PName.HeaderText = "Product Name";
-            this.PName.Name = "PName";
-            this.PName.Width = 170;
+            this.product_Name.FillWeight = 80.45901F;
+            this.product_Name.HeaderText = "Product Name";
+            this.product_Name.Name = "product_Name";
+            this.product_Name.Width = 170;
             // 
-            // PExperienceDays
+            // product_ExperienceDays
             // 
-            this.PExperienceDays.FillWeight = 14F;
-            this.PExperienceDays.HeaderText = "Experience Days";
-            this.PExperienceDays.Name = "PExperienceDays";
-            this.PExperienceDays.Width = 140;
+            this.product_ExperienceDays.HeaderText = "Experience Days";
+            this.product_ExperienceDays.Name = "product_ExperienceDays";
+            this.product_ExperienceDays.Width = 134;
             // 
-            // PLicenseCode
+            // product_LicenseCode
             // 
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.PLicenseCode.DefaultCellStyle = dataGridViewCellStyle45;
-            this.PLicenseCode.FillWeight = 14F;
-            this.PLicenseCode.HeaderText = "License Code";
-            this.PLicenseCode.Name = "PLicenseCode";
-            this.PLicenseCode.Width = 250;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle3;
+            this.product_LicenseCode.FillWeight = 14F;
+            this.product_LicenseCode.HeaderText = "License Code";
+            this.product_LicenseCode.Name = "product_LicenseCode";
+            this.product_LicenseCode.Width = 250;
             // 
-            // PLicenseKey
+            // product_LicenseKey
             // 
-            this.PLicenseKey.FillWeight = 13F;
-            this.PLicenseKey.HeaderText = "License Key";
-            this.PLicenseKey.Name = "PLicenseKey";
-            this.PLicenseKey.Width = 250;
+            this.product_LicenseKey.FillWeight = 10F;
+            this.product_LicenseKey.HeaderText = "License Key";
+            this.product_LicenseKey.Name = "product_LicenseKey";
+            this.product_LicenseKey.Width = 250;
             // 
-            // PPlan
+            // product_Plan
             // 
-            this.PPlan.FillWeight = 120F;
-            this.PPlan.HeaderText = "Plan";
-            this.PPlan.Name = "PPlan";
-            this.PPlan.Width = 120;
+            this.product_Plan.HeaderText = "Plan";
+            this.product_Plan.Name = "product_Plan";
             // 
-            // PExpiry
+            // product_Expiry
             // 
-            this.PExpiry.HeaderText = "Expiry";
-            this.PExpiry.Name = "PExpiry";
-            this.PExpiry.Width = 150;
+            this.product_Expiry.HeaderText = "Expiry";
+            this.product_Expiry.Name = "product_Expiry";
+            this.product_Expiry.Width = 120;
             // 
-            // PEmail
+            // product_Email
             // 
-            this.PEmail.HeaderText = "Email";
-            this.PEmail.Name = "PEmail";
-            this.PEmail.Width = 250;
+            this.product_Email.FillWeight = 80.45901F;
+            this.product_Email.HeaderText = "Email";
+            this.product_Email.Name = "product_Email";
+            this.product_Email.Width = 170;
             // 
-            // buttonSaveUpdate
+            // product_Created
             // 
-            this.buttonSaveUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.buttonSaveUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonSaveUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
-            this.buttonSaveUpdate.FlatAppearance.BorderSize = 2;
-            this.buttonSaveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSaveUpdate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7F, System.Drawing.FontStyle.Bold);
-            this.buttonSaveUpdate.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonSaveUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSaveUpdate.Location = new System.Drawing.Point(293, 179);
-            this.buttonSaveUpdate.Name = "buttonSaveUpdate";
-            this.buttonSaveUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonSaveUpdate.Size = new System.Drawing.Size(237, 28);
-            this.buttonSaveUpdate.TabIndex = 446;
-            this.buttonSaveUpdate.Text = "SAVE";
-            this.buttonSaveUpdate.UseVisualStyleBackColor = false;
-            this.buttonSaveUpdate.Visible = false;
-            this.buttonSaveUpdate.Click += new System.EventHandler(this.buttonSaveUpdate_Click);
+            this.product_Created.FillWeight = 80.45901F;
+            this.product_Created.HeaderText = "Created";
+            this.product_Created.Name = "product_Created";
+            this.product_Created.Width = 120;
+            // 
+            // product_Status
+            // 
+            this.product_Status.FillWeight = 80.45901F;
+            this.product_Status.HeaderText = "Status";
+            this.product_Status.Name = "product_Status";
+            this.product_Status.Width = 120;
             // 
             // Main
             // 
@@ -1330,6 +1330,7 @@
             this.Name = "Main";
             this.Padding = new System.Windows.Forms.Padding(23, 69, 23, 23);
             this.Style = MetroFramework.MetroColorStyle.Silver;
+            this.Load += new System.EventHandler(this.Main_Load);
             this.PanelNav.ResumeLayout(false);
             this.PanelNav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1411,15 +1412,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonDownload;
         private System.Windows.Forms.Button buttonProductDownload;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Plan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseKey;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Expiry;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Created;
         private System.Windows.Forms.DataGridViewTextBoxColumn PName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PExperienceDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn PLicenseCode;
@@ -1428,6 +1420,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PExpiry;
         private System.Windows.Forms.DataGridViewTextBoxColumn PEmail;
         private System.Windows.Forms.Button buttonSaveUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseKey;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Plan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Expiry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Created;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
     }
 }
 
