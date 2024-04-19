@@ -386,5 +386,33 @@ namespace FLManager
         {
            
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            // Check if a row is selected
+            if (productGrid.SelectedRows.Count > 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = productGrid.SelectedRows[0];
+
+                // Create a new instance of ProductUpdateForm
+                ProductUpdateForm updateForm = new ProductUpdateForm();
+
+                // Pass the selected row's data to the ProductUpdateForm
+                updateForm.ProductNameValue = selectedRow.Cells["product_Name"].Value.ToString();
+                updateForm.ExperienceDays = Convert.ToInt32(selectedRow.Cells["product_ExperienceDays"].Value);
+                updateForm.Email = selectedRow.Cells["product_Email"].Value.ToString();
+                updateForm.SelectedPlan = selectedRow.Cells["product_Plan"].Value.ToString();
+
+                // Show the ProductUpdateForm
+                updateForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
+
