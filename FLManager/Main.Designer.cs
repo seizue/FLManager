@@ -28,21 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelNav = new MetroFramework.Controls.MetroPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonSettings = new System.Windows.Forms.Button();
+            this.buttonProducts = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonDashboard = new System.Windows.Forms.Button();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,7 +56,7 @@
             this.checkBoxInactive = new MetroFramework.Controls.MetroCheckBox();
             this.panel_Indicator = new System.Windows.Forms.Panel();
             this.labelRegister = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.separator = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
@@ -68,19 +72,10 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelLicense = new MetroFramework.Controls.MetroPanel();
-            this.buttonSaveUpdate = new System.Windows.Forms.Button();
+            this.buttonDownload = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.buttonUpdateLi = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.licenseGrid = new MetroFramework.Controls.MetroGrid();
-            this.PName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PLicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PLicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PExpiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -103,32 +98,42 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxName = new MetroFramework.Controls.MetroTextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonProductDownload = new System.Windows.Forms.Button();
-            this.buttonDownload = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonSettings = new System.Windows.Forms.Button();
-            this.buttonProducts = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonDashboard = new System.Windows.Forms.Button();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.licenseGrid = new MetroFramework.Controls.MetroGrid();
+            this.PEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PExpiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PLicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PLicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.PanelNav.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panelProductGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productGrid)).BeginInit();
             this.panelLicense.SuspendLayout();
             this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.licenseGrid)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.licenseGrid)).BeginInit();
+            this.metroPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelNav
@@ -149,7 +154,7 @@
             this.PanelNav.Location = new System.Drawing.Point(0, 5);
             this.PanelNav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PanelNav.Name = "PanelNav";
-            this.PanelNav.Size = new System.Drawing.Size(204, 635);
+            this.PanelNav.Size = new System.Drawing.Size(208, 635);
             this.PanelNav.TabIndex = 1;
             this.PanelNav.UseCustomBackColor = true;
             this.PanelNav.VerticalScrollbarBarColor = true;
@@ -165,6 +170,52 @@
             this.panel1.Size = new System.Drawing.Size(117, 1);
             this.panel1.TabIndex = 9;
             // 
+            // buttonSettings
+            // 
+            this.buttonSettings.FlatAppearance.BorderSize = 0;
+            this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSettings.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonSettings.Image = global::FLManager.Properties.Resources.settings_16px;
+            this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSettings.Location = new System.Drawing.Point(29, 178);
+            this.buttonSettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonSettings.Name = "buttonSettings";
+            this.buttonSettings.Size = new System.Drawing.Size(139, 29);
+            this.buttonSettings.TabIndex = 8;
+            this.buttonSettings.Text = "          Settings";
+            this.buttonSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSettings.UseVisualStyleBackColor = true;
+            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
+            // 
+            // buttonProducts
+            // 
+            this.buttonProducts.FlatAppearance.BorderSize = 0;
+            this.buttonProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProducts.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonProducts.Image = global::FLManager.Properties.Resources.data_encryption_18px;
+            this.buttonProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProducts.Location = new System.Drawing.Point(29, 138);
+            this.buttonProducts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonProducts.Name = "buttonProducts";
+            this.buttonProducts.Size = new System.Drawing.Size(139, 29);
+            this.buttonProducts.TabIndex = 7;
+            this.buttonProducts.Text = "          Products";
+            this.buttonProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProducts.UseVisualStyleBackColor = true;
+            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FLManager.Properties.Resources.access_24px;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -177,6 +228,23 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "FLManager";
             // 
+            // buttonDashboard
+            // 
+            this.buttonDashboard.FlatAppearance.BorderSize = 0;
+            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDashboard.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonDashboard.Image = global::FLManager.Properties.Resources.dashboard_layout_16px;
+            this.buttonDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDashboard.Location = new System.Drawing.Point(29, 99);
+            this.buttonDashboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonDashboard.Name = "buttonDashboard";
+            this.buttonDashboard.Size = new System.Drawing.Size(139, 29);
+            this.buttonDashboard.TabIndex = 4;
+            this.buttonDashboard.Text = "Dashboard";
+            this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
+            // 
             // metroPanel1
             // 
             this.metroPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -184,7 +252,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(203, 0);
+            this.metroPanel1.Location = new System.Drawing.Point(207, 0);
             this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(1, 635);
@@ -199,10 +267,10 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Location = new System.Drawing.Point(239, 72);
+            this.panel2.Location = new System.Drawing.Point(232, 72);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(780, 1);
+            this.panel2.Size = new System.Drawing.Size(800, 1);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -210,10 +278,10 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(239, 132);
+            this.panel3.Location = new System.Drawing.Point(232, 132);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(780, 1);
+            this.panel3.Size = new System.Drawing.Size(800, 1);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -221,7 +289,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(235, 43);
+            this.label2.Location = new System.Drawing.Point(228, 43);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 23);
@@ -233,7 +301,7 @@
             this.labelProducts.AutoSize = true;
             this.labelProducts.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelProducts.Location = new System.Drawing.Point(330, 108);
+            this.labelProducts.Location = new System.Drawing.Point(323, 108);
             this.labelProducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProducts.Name = "labelProducts";
             this.labelProducts.Size = new System.Drawing.Size(75, 18);
@@ -256,7 +324,7 @@
             this.textboxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textboxSearch.CustomButton.UseSelectable = true;
             this.textboxSearch.Lines = new string[0];
-            this.textboxSearch.Location = new System.Drawing.Point(239, 157);
+            this.textboxSearch.Location = new System.Drawing.Point(230, 157);
             this.textboxSearch.MaxLength = 32767;
             this.textboxSearch.Name = "textboxSearch";
             this.textboxSearch.PasswordChar = '\0';
@@ -281,7 +349,7 @@
             this.checkBoxInactive.AutoSize = true;
             this.checkBoxInactive.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
             this.checkBoxInactive.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBoxInactive.Location = new System.Drawing.Point(608, 165);
+            this.checkBoxInactive.Location = new System.Drawing.Point(599, 165);
             this.checkBoxInactive.Name = "checkBoxInactive";
             this.checkBoxInactive.Size = new System.Drawing.Size(99, 15);
             this.checkBoxInactive.TabIndex = 15;
@@ -293,7 +361,7 @@
             // panel_Indicator
             // 
             this.panel_Indicator.BackColor = System.Drawing.Color.LightCoral;
-            this.panel_Indicator.Location = new System.Drawing.Point(239, 127);
+            this.panel_Indicator.Location = new System.Drawing.Point(232, 127);
             this.panel_Indicator.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel_Indicator.Name = "panel_Indicator";
             this.panel_Indicator.Size = new System.Drawing.Size(49, 3);
@@ -304,7 +372,7 @@
             this.labelRegister.AutoSize = true;
             this.labelRegister.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRegister.Location = new System.Drawing.Point(236, 109);
+            this.labelRegister.Location = new System.Drawing.Point(229, 109);
             this.labelRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRegister.Name = "labelRegister";
             this.labelRegister.Size = new System.Drawing.Size(57, 18);
@@ -312,21 +380,22 @@
             this.labelRegister.Text = "LICENSE";
             this.labelRegister.Click += new System.EventHandler(this.labelRegister_Click);
             // 
-            // panel5
+            // separator
             // 
-            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Location = new System.Drawing.Point(895, 94);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 20);
-            this.panel5.TabIndex = 380;
+            this.separator.BackColor = System.Drawing.Color.Gainsboro;
+            this.separator.Location = new System.Drawing.Point(912, 94);
+            this.separator.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.separator.Name = "separator";
+            this.separator.Size = new System.Drawing.Size(1, 20);
+            this.separator.TabIndex = 380;
+            this.separator.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(327, 50);
+            this.label3.Location = new System.Drawing.Point(320, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 14);
@@ -340,7 +409,7 @@
             this.panel7.Controls.Add(this.panel9);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.panel4);
-            this.panel7.Location = new System.Drawing.Point(863, 154);
+            this.panel7.Location = new System.Drawing.Point(871, 154);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(162, 26);
             this.panel7.TabIndex = 384;
@@ -403,7 +472,7 @@
             this.checkBoxActive.AutoSize = true;
             this.checkBoxActive.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
             this.checkBoxActive.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBoxActive.Location = new System.Drawing.Point(497, 165);
+            this.checkBoxActive.Location = new System.Drawing.Point(488, 165);
             this.checkBoxActive.Name = "checkBoxActive";
             this.checkBoxActive.Size = new System.Drawing.Size(90, 15);
             this.checkBoxActive.TabIndex = 14;
@@ -414,14 +483,16 @@
             // 
             // panelProductGrid
             // 
+            this.panelProductGrid.Controls.Add(this.metroPanel3);
+            this.panelProductGrid.Controls.Add(this.panel5);
             this.panelProductGrid.Controls.Add(this.productGrid);
             this.panelProductGrid.Controls.Add(this.panel14);
             this.panelProductGrid.Controls.Add(this.panel13);
             this.panelProductGrid.Controls.Add(this.panel11);
             this.panelProductGrid.Controls.Add(this.panel6);
-            this.panelProductGrid.Location = new System.Drawing.Point(239, 203);
+            this.panelProductGrid.Location = new System.Drawing.Point(227, 203);
             this.panelProductGrid.Name = "panelProductGrid";
-            this.panelProductGrid.Size = new System.Drawing.Size(786, 405);
+            this.panelProductGrid.Size = new System.Drawing.Size(811, 404);
             this.panelProductGrid.TabIndex = 387;
             // 
             // productGrid
@@ -429,67 +500,67 @@
             this.productGrid.AllowUserToAddRows = false;
             this.productGrid.AllowUserToResizeColumns = false;
             this.productGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.productGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.productGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.productGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
             this.productGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.productGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.productGrid.ColumnHeadersHeight = 48;
             this.productGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.product_Name,
-            this.product_ExperienceDays,
+            this.product_Status,
             this.product_LicenseCode,
             this.product_LicenseKey,
+            this.product_ExperienceDays,
             this.product_Plan,
             this.product_Expiry,
             this.product_Email,
-            this.product_Created,
-            this.product_Status});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.productGrid.DefaultCellStyle = dataGridViewCellStyle16;
+            this.product_Created});
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productGrid.DefaultCellStyle = dataGridViewCellStyle52;
             this.productGrid.EnableHeadersVisualStyles = false;
             this.productGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.productGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.productGrid.Location = new System.Drawing.Point(2, 3);
+            this.productGrid.Location = new System.Drawing.Point(3, 4);
             this.productGrid.MultiSelect = false;
             this.productGrid.Name = "productGrid";
             this.productGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.productGrid.RowHeadersWidth = 5;
             this.productGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            this.productGrid.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            this.productGrid.RowsDefaultCellStyle = dataGridViewCellStyle54;
             this.productGrid.RowTemplate.Height = 23;
             this.productGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.productGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.productGrid.Size = new System.Drawing.Size(781, 406);
+            this.productGrid.Size = new System.Drawing.Size(805, 368);
             this.productGrid.TabIndex = 390;
             this.productGrid.UseCustomBackColor = true;
             this.productGrid.UseCustomForeColor = true;
@@ -502,27 +573,27 @@
             this.panel14.Location = new System.Drawing.Point(0, 1);
             this.panel14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1, 403);
+            this.panel14.Size = new System.Drawing.Size(1, 402);
             this.panel14.TabIndex = 389;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel13.Location = new System.Drawing.Point(785, 1);
+            this.panel13.Location = new System.Drawing.Point(810, 1);
             this.panel13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1, 403);
+            this.panel13.Size = new System.Drawing.Size(1, 402);
             this.panel13.TabIndex = 388;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 404);
+            this.panel11.Location = new System.Drawing.Point(0, 403);
             this.panel11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(786, 1);
+            this.panel11.Size = new System.Drawing.Size(811, 1);
             this.panel11.TabIndex = 387;
             // 
             // panel6
@@ -532,16 +603,14 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(786, 1);
+            this.panel6.Size = new System.Drawing.Size(811, 1);
             this.panel6.TabIndex = 382;
             // 
             // panelLicense
             // 
-            this.panelLicense.Controls.Add(this.buttonSaveUpdate);
             this.panelLicense.Controls.Add(this.buttonDownload);
             this.panelLicense.Controls.Add(this.label9);
             this.panelLicense.Controls.Add(this.label8);
-            this.panelLicense.Controls.Add(this.buttonUpdateLi);
             this.panelLicense.Controls.Add(this.panel20);
             this.panelLicense.Controls.Add(this.label7);
             this.panelLicense.Controls.Add(this.panel15);
@@ -559,40 +628,37 @@
             this.panelLicense.HorizontalScrollbarBarColor = true;
             this.panelLicense.HorizontalScrollbarHighlightOnWheel = false;
             this.panelLicense.HorizontalScrollbarSize = 10;
-            this.panelLicense.Location = new System.Drawing.Point(222, 137);
+            this.panelLicense.Location = new System.Drawing.Point(208, 136);
             this.panelLicense.Name = "panelLicense";
-            this.panelLicense.Size = new System.Drawing.Size(812, 477);
+            this.panelLicense.Size = new System.Drawing.Size(837, 498);
             this.panelLicense.TabIndex = 392;
             this.panelLicense.VerticalScrollbarBarColor = true;
             this.panelLicense.VerticalScrollbarHighlightOnWheel = false;
             this.panelLicense.VerticalScrollbarSize = 10;
             // 
-            // buttonSaveUpdate
+            // buttonDownload
             // 
-            this.buttonSaveUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.buttonSaveUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonSaveUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
-            this.buttonSaveUpdate.FlatAppearance.BorderSize = 2;
-            this.buttonSaveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSaveUpdate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7F, System.Drawing.FontStyle.Bold);
-            this.buttonSaveUpdate.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonSaveUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSaveUpdate.Location = new System.Drawing.Point(293, 179);
-            this.buttonSaveUpdate.Name = "buttonSaveUpdate";
-            this.buttonSaveUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonSaveUpdate.Size = new System.Drawing.Size(237, 28);
-            this.buttonSaveUpdate.TabIndex = 446;
-            this.buttonSaveUpdate.Text = "SAVE";
-            this.buttonSaveUpdate.UseVisualStyleBackColor = false;
-            this.buttonSaveUpdate.Visible = false;
-            this.buttonSaveUpdate.Click += new System.EventHandler(this.buttonSaveUpdate_Click);
+            this.buttonDownload.FlatAppearance.BorderSize = 0;
+            this.buttonDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDownload.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDownload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonDownload.Image = global::FLManager.Properties.Resources.export_csv_24px;
+            this.buttonDownload.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonDownload.Location = new System.Drawing.Point(719, 248);
+            this.buttonDownload.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonDownload.Name = "buttonDownload";
+            this.buttonDownload.Size = new System.Drawing.Size(98, 29);
+            this.buttonDownload.TabIndex = 445;
+            this.buttonDownload.Text = "Download";
+            this.buttonDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDownload.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 9F);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(147, 249);
+            this.label9.Location = new System.Drawing.Point(154, 256);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 14);
@@ -604,160 +670,25 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(13, 245);
+            this.label8.Location = new System.Drawing.Point(20, 252);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 19);
             this.label8.TabIndex = 441;
             this.label8.Text = "PRODUCT PREVIEW";
             // 
-            // buttonUpdateLi
-            // 
-            this.buttonUpdateLi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(136)))), ((int)(((byte)(43)))));
-            this.buttonUpdateLi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonUpdateLi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(65)))));
-            this.buttonUpdateLi.FlatAppearance.BorderSize = 2;
-            this.buttonUpdateLi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUpdateLi.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7F, System.Drawing.FontStyle.Bold);
-            this.buttonUpdateLi.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonUpdateLi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonUpdateLi.Location = new System.Drawing.Point(566, 179);
-            this.buttonUpdateLi.Name = "buttonUpdateLi";
-            this.buttonUpdateLi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonUpdateLi.Size = new System.Drawing.Size(236, 28);
-            this.buttonUpdateLi.TabIndex = 440;
-            this.buttonUpdateLi.Text = "UPDATE";
-            this.buttonUpdateLi.UseVisualStyleBackColor = false;
-            this.buttonUpdateLi.Click += new System.EventHandler(this.buttonUpdateLi_Click);
-            // 
             // panel20
             // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
             this.panel20.Controls.Add(this.licenseGrid);
             this.panel20.Controls.Add(this.panel21);
             this.panel20.Controls.Add(this.panel22);
             this.panel20.Controls.Add(this.panel23);
             this.panel20.Controls.Add(this.panel24);
-            this.panel20.Location = new System.Drawing.Point(17, 281);
+            this.panel20.Location = new System.Drawing.Point(19, 292);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(786, 187);
+            this.panel20.Size = new System.Drawing.Size(811, 179);
             this.panel20.TabIndex = 421;
-            // 
-            // licenseGrid
-            // 
-            this.licenseGrid.AllowUserToAddRows = false;
-            this.licenseGrid.AllowUserToResizeColumns = false;
-            this.licenseGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.licenseGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.licenseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
-            this.licenseGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.licenseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.licenseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.licenseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.licenseGrid.ColumnHeadersHeight = 48;
-            this.licenseGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PName,
-            this.PExperienceDays,
-            this.PLicenseCode,
-            this.PLicenseKey,
-            this.PPlan,
-            this.PExpiry,
-            this.PEmail});
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.licenseGrid.DefaultCellStyle = dataGridViewCellStyle22;
-            this.licenseGrid.EnableHeadersVisualStyles = false;
-            this.licenseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.licenseGrid.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.licenseGrid.Location = new System.Drawing.Point(1, 1);
-            this.licenseGrid.MultiSelect = false;
-            this.licenseGrid.Name = "licenseGrid";
-            this.licenseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.licenseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
-            this.licenseGrid.RowHeadersWidth = 5;
-            this.licenseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            this.licenseGrid.RowsDefaultCellStyle = dataGridViewCellStyle24;
-            this.licenseGrid.RowTemplate.Height = 23;
-            this.licenseGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.licenseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.licenseGrid.Size = new System.Drawing.Size(784, 190);
-            this.licenseGrid.TabIndex = 390;
-            this.licenseGrid.UseCustomBackColor = true;
-            this.licenseGrid.UseCustomForeColor = true;
-            // 
-            // PName
-            // 
-            this.PName.FillWeight = 10F;
-            this.PName.HeaderText = "Product Name";
-            this.PName.Name = "PName";
-            this.PName.Width = 170;
-            // 
-            // PExperienceDays
-            // 
-            this.PExperienceDays.FillWeight = 14F;
-            this.PExperienceDays.HeaderText = "Experience Days";
-            this.PExperienceDays.Name = "PExperienceDays";
-            this.PExperienceDays.Width = 140;
-            // 
-            // PLicenseCode
-            // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.PLicenseCode.DefaultCellStyle = dataGridViewCellStyle21;
-            this.PLicenseCode.FillWeight = 14F;
-            this.PLicenseCode.HeaderText = "License Code";
-            this.PLicenseCode.Name = "PLicenseCode";
-            this.PLicenseCode.Width = 250;
-            // 
-            // PLicenseKey
-            // 
-            this.PLicenseKey.FillWeight = 13F;
-            this.PLicenseKey.HeaderText = "License Key";
-            this.PLicenseKey.Name = "PLicenseKey";
-            this.PLicenseKey.Width = 250;
-            // 
-            // PPlan
-            // 
-            this.PPlan.FillWeight = 120F;
-            this.PPlan.HeaderText = "Plan";
-            this.PPlan.Name = "PPlan";
-            this.PPlan.Width = 120;
-            // 
-            // PExpiry
-            // 
-            this.PExpiry.HeaderText = "Expiry";
-            this.PExpiry.Name = "PExpiry";
-            this.PExpiry.Width = 150;
-            // 
-            // PEmail
-            // 
-            this.PEmail.HeaderText = "Email";
-            this.PEmail.Name = "PEmail";
-            this.PEmail.Width = 250;
             // 
             // panel21
             // 
@@ -766,27 +697,27 @@
             this.panel21.Location = new System.Drawing.Point(0, 1);
             this.panel21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(1, 185);
+            this.panel21.Size = new System.Drawing.Size(1, 177);
             this.panel21.TabIndex = 389;
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel22.Location = new System.Drawing.Point(785, 1);
+            this.panel22.Location = new System.Drawing.Point(810, 1);
             this.panel22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1, 185);
+            this.panel22.Size = new System.Drawing.Size(1, 177);
             this.panel22.TabIndex = 388;
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel23.Location = new System.Drawing.Point(0, 186);
+            this.panel23.Location = new System.Drawing.Point(0, 178);
             this.panel23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(786, 1);
+            this.panel23.Size = new System.Drawing.Size(811, 1);
             this.panel23.TabIndex = 387;
             // 
             // panel24
@@ -796,7 +727,7 @@
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(786, 1);
+            this.panel24.Size = new System.Drawing.Size(811, 1);
             this.panel24.TabIndex = 382;
             // 
             // label7
@@ -804,7 +735,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(15, 16);
+            this.label7.Location = new System.Drawing.Point(28, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 15);
             this.label7.TabIndex = 420;
@@ -817,7 +748,7 @@
             this.panel15.Controls.Add(this.panel17);
             this.panel15.Controls.Add(this.panel18);
             this.panel15.Controls.Add(this.panel19);
-            this.panel15.Location = new System.Drawing.Point(17, 39);
+            this.panel15.Location = new System.Drawing.Point(30, 36);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(235, 26);
             this.panel15.TabIndex = 419;
@@ -895,7 +826,7 @@
             this.textBoxExperienceDays.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxExperienceDays.CustomButton.UseSelectable = true;
             this.textBoxExperienceDays.Lines = new string[0];
-            this.textBoxExperienceDays.Location = new System.Drawing.Point(18, 182);
+            this.textBoxExperienceDays.Location = new System.Drawing.Point(30, 184);
             this.textBoxExperienceDays.MaxLength = 32767;
             this.textBoxExperienceDays.Name = "textBoxExperienceDays";
             this.textBoxExperienceDays.PasswordChar = '\0';
@@ -920,7 +851,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(16, 157);
+            this.label6.Location = new System.Drawing.Point(28, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 15);
             this.label6.TabIndex = 417;
@@ -930,7 +861,7 @@
             // 
             this.fogotPass_Link.FontWeight = MetroFramework.MetroLinkWeight.Light;
             this.fogotPass_Link.ForeColor = System.Drawing.Color.DimGray;
-            this.fogotPass_Link.Location = new System.Drawing.Point(290, 81);
+            this.fogotPass_Link.Location = new System.Drawing.Point(302, 73);
             this.fogotPass_Link.Name = "fogotPass_Link";
             this.fogotPass_Link.Size = new System.Drawing.Size(366, 23);
             this.fogotPass_Link.TabIndex = 416;
@@ -943,10 +874,10 @@
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel12.Location = new System.Drawing.Point(293, 111);
+            this.panel12.Location = new System.Drawing.Point(305, 103);
             this.panel12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(505, 1);
+            this.panel12.Size = new System.Drawing.Size(530, 1);
             this.panel12.TabIndex = 415;
             // 
             // button_Generate
@@ -959,7 +890,7 @@
             this.button_Generate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7F, System.Drawing.FontStyle.Bold);
             this.button_Generate.ForeColor = System.Drawing.Color.MintCream;
             this.button_Generate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_Generate.Location = new System.Drawing.Point(293, 180);
+            this.button_Generate.Location = new System.Drawing.Point(305, 180);
             this.button_Generate.Name = "button_Generate";
             this.button_Generate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button_Generate.Size = new System.Drawing.Size(235, 27);
@@ -983,7 +914,7 @@
             this.textBoxSMS.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxSMS.CustomButton.UseSelectable = true;
             this.textBoxSMS.Lines = new string[0];
-            this.textBoxSMS.Location = new System.Drawing.Point(567, 39);
+            this.textBoxSMS.Location = new System.Drawing.Point(580, 36);
             this.textBoxSMS.MaxLength = 32767;
             this.textBoxSMS.Name = "textBoxSMS";
             this.textBoxSMS.PasswordChar = '\0';
@@ -1008,7 +939,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(566, 16);
+            this.label5.Location = new System.Drawing.Point(579, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 15);
             this.label5.TabIndex = 380;
@@ -1029,7 +960,7 @@
             this.textBoxEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxEmail.CustomButton.UseSelectable = true;
             this.textBoxEmail.Lines = new string[0];
-            this.textBoxEmail.Location = new System.Drawing.Point(292, 39);
+            this.textBoxEmail.Location = new System.Drawing.Point(305, 36);
             this.textBoxEmail.MaxLength = 32767;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PasswordChar = '\0';
@@ -1054,7 +985,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(290, 16);
+            this.label4.Location = new System.Drawing.Point(303, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 15);
             this.label4.TabIndex = 378;
@@ -1075,7 +1006,7 @@
             this.textBoxName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxName.CustomButton.UseSelectable = true;
             this.textBoxName.Lines = new string[0];
-            this.textBoxName.Location = new System.Drawing.Point(17, 112);
+            this.textBoxName.Location = new System.Drawing.Point(31, 109);
             this.textBoxName.MaxLength = 32767;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
@@ -1100,72 +1031,11 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(15, 89);
+            this.label12.Location = new System.Drawing.Point(29, 86);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 15);
             this.label12.TabIndex = 376;
             this.label12.Text = "Product Name";
-            // 
-            // product_Name
-            // 
-            this.product_Name.FillWeight = 80.45901F;
-            this.product_Name.HeaderText = "Product Name";
-            this.product_Name.Name = "product_Name";
-            this.product_Name.Width = 170;
-            // 
-            // product_ExperienceDays
-            // 
-            this.product_ExperienceDays.HeaderText = "Experience Days";
-            this.product_ExperienceDays.Name = "product_ExperienceDays";
-            this.product_ExperienceDays.Width = 134;
-            // 
-            // product_LicenseCode
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle15;
-            this.product_LicenseCode.FillWeight = 14F;
-            this.product_LicenseCode.HeaderText = "License Code";
-            this.product_LicenseCode.Name = "product_LicenseCode";
-            this.product_LicenseCode.Width = 250;
-            // 
-            // product_LicenseKey
-            // 
-            this.product_LicenseKey.FillWeight = 10F;
-            this.product_LicenseKey.HeaderText = "License Key";
-            this.product_LicenseKey.Name = "product_LicenseKey";
-            this.product_LicenseKey.Width = 250;
-            // 
-            // product_Plan
-            // 
-            this.product_Plan.HeaderText = "Plan";
-            this.product_Plan.Name = "product_Plan";
-            // 
-            // product_Expiry
-            // 
-            this.product_Expiry.HeaderText = "Expiry";
-            this.product_Expiry.Name = "product_Expiry";
-            this.product_Expiry.Width = 120;
-            // 
-            // product_Email
-            // 
-            this.product_Email.FillWeight = 80.45901F;
-            this.product_Email.HeaderText = "Email";
-            this.product_Email.Name = "product_Email";
-            this.product_Email.Width = 170;
-            // 
-            // product_Created
-            // 
-            this.product_Created.FillWeight = 80.45901F;
-            this.product_Created.HeaderText = "Created";
-            this.product_Created.Name = "product_Created";
-            this.product_Created.Width = 120;
-            // 
-            // product_Status
-            // 
-            this.product_Status.FillWeight = 80.45901F;
-            this.product_Status.HeaderText = "Status";
-            this.product_Status.Name = "product_Status";
-            this.product_Status.Width = 120;
             // 
             // buttonProductDownload
             // 
@@ -1175,7 +1045,7 @@
             this.buttonProductDownload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonProductDownload.Image = global::FLManager.Properties.Resources.export_csv_24px;
             this.buttonProductDownload.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonProductDownload.Location = new System.Drawing.Point(912, 90);
+            this.buttonProductDownload.Location = new System.Drawing.Point(929, 90);
             this.buttonProductDownload.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonProductDownload.Name = "buttonProductDownload";
             this.buttonProductDownload.Size = new System.Drawing.Size(98, 29);
@@ -1183,23 +1053,7 @@
             this.buttonProductDownload.Text = "Download";
             this.buttonProductDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProductDownload.UseVisualStyleBackColor = true;
-            // 
-            // buttonDownload
-            // 
-            this.buttonDownload.FlatAppearance.BorderSize = 0;
-            this.buttonDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDownload.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDownload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonDownload.Image = global::FLManager.Properties.Resources.export_csv_24px;
-            this.buttonDownload.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonDownload.Location = new System.Drawing.Point(690, 241);
-            this.buttonDownload.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonDownload.Name = "buttonDownload";
-            this.buttonDownload.Size = new System.Drawing.Size(98, 29);
-            this.buttonDownload.TabIndex = 445;
-            this.buttonDownload.Text = "Download";
-            this.buttonDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDownload.UseVisualStyleBackColor = true;
+            this.buttonProductDownload.Visible = false;
             // 
             // buttonUpdate
             // 
@@ -1211,13 +1065,14 @@
             this.buttonUpdate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8F, System.Drawing.FontStyle.Bold);
             this.buttonUpdate.ForeColor = System.Drawing.Color.Black;
             this.buttonUpdate.Image = global::FLManager.Properties.Resources.edit_profile_24px;
-            this.buttonUpdate.Location = new System.Drawing.Point(785, 84);
+            this.buttonUpdate.Location = new System.Drawing.Point(802, 84);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonUpdate.Size = new System.Drawing.Size(33, 32);
             this.buttonUpdate.TabIndex = 378;
             this.buttonUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Visible = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDelete
@@ -1230,89 +1085,285 @@
             this.buttonDelete.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.Color.Black;
             this.buttonDelete.Image = global::FLManager.Properties.Resources.add_user_male_24px;
-            this.buttonDelete.Location = new System.Drawing.Point(834, 84);
+            this.buttonDelete.Location = new System.Drawing.Point(851, 84);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonDelete.Size = new System.Drawing.Size(33, 32);
             this.buttonDelete.TabIndex = 376;
             this.buttonDelete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Visible = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // buttonSettings
+            // metroPanel2
             // 
-            this.buttonSettings.FlatAppearance.BorderSize = 0;
-            this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSettings.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonSettings.Image = global::FLManager.Properties.Resources.settings_16px;
-            this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSettings.Location = new System.Drawing.Point(34, 178);
-            this.buttonSettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(139, 29);
-            this.buttonSettings.TabIndex = 8;
-            this.buttonSettings.Text = "        Settings";
-            this.buttonSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSettings.UseVisualStyleBackColor = true;
-            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
+            this.metroPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 12;
+            this.metroPanel2.Location = new System.Drawing.Point(0, 627);
+            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(1060, 10);
+            this.metroPanel2.TabIndex = 447;
+            this.metroPanel2.UseCustomBackColor = true;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 12;
             // 
-            // buttonProducts
+            // licenseGrid
             // 
-            this.buttonProducts.FlatAppearance.BorderSize = 0;
-            this.buttonProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProducts.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonProducts.Image = global::FLManager.Properties.Resources.data_encryption_18px;
-            this.buttonProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProducts.Location = new System.Drawing.Point(34, 138);
-            this.buttonProducts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonProducts.Name = "buttonProducts";
-            this.buttonProducts.Size = new System.Drawing.Size(139, 29);
-            this.buttonProducts.TabIndex = 7;
-            this.buttonProducts.Text = "        Products";
-            this.buttonProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProducts.UseVisualStyleBackColor = true;
-            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click);
+            this.licenseGrid.AllowUserToAddRows = false;
+            this.licenseGrid.AllowUserToResizeColumns = false;
+            this.licenseGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.licenseGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
+            this.licenseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            this.licenseGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.licenseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.licenseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.licenseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
+            this.licenseGrid.ColumnHeadersHeight = 48;
+            this.licenseGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PName,
+            this.PLicenseCode,
+            this.PLicenseKey,
+            this.PExperienceDays,
+            this.PPlan,
+            this.PExpiry,
+            this.PEmail});
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.licenseGrid.DefaultCellStyle = dataGridViewCellStyle58;
+            this.licenseGrid.EnableHeadersVisualStyles = false;
+            this.licenseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.licenseGrid.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.licenseGrid.Location = new System.Drawing.Point(3, 3);
+            this.licenseGrid.MultiSelect = false;
+            this.licenseGrid.Name = "licenseGrid";
+            this.licenseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.licenseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle59;
+            this.licenseGrid.RowHeadersWidth = 5;
+            this.licenseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle60.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            this.licenseGrid.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            this.licenseGrid.RowTemplate.Height = 23;
+            this.licenseGrid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.licenseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.licenseGrid.Size = new System.Drawing.Size(805, 169);
+            this.licenseGrid.TabIndex = 391;
+            this.licenseGrid.UseCustomBackColor = true;
+            this.licenseGrid.UseCustomForeColor = true;
             // 
-            // pictureBox1
+            // PEmail
             // 
-            this.pictureBox1.Image = global::FLManager.Properties.Resources.access_24px;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.PEmail.HeaderText = "Email";
+            this.PEmail.Name = "PEmail";
+            this.PEmail.Visible = false;
+            this.PEmail.Width = 250;
             // 
-            // buttonDashboard
+            // PExpiry
             // 
-            this.buttonDashboard.FlatAppearance.BorderSize = 0;
-            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDashboard.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonDashboard.Image = global::FLManager.Properties.Resources.dashboard_layout_16px;
-            this.buttonDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDashboard.Location = new System.Drawing.Point(34, 99);
-            this.buttonDashboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Size = new System.Drawing.Size(123, 29);
-            this.buttonDashboard.TabIndex = 4;
-            this.buttonDashboard.Text = "Dashboard";
-            this.buttonDashboard.UseVisualStyleBackColor = true;
-            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
+            this.PExpiry.HeaderText = "Expiry";
+            this.PExpiry.Name = "PExpiry";
+            this.PExpiry.Visible = false;
+            this.PExpiry.Width = 150;
+            // 
+            // PPlan
+            // 
+            this.PPlan.FillWeight = 120F;
+            this.PPlan.HeaderText = "Plan";
+            this.PPlan.Name = "PPlan";
+            this.PPlan.Visible = false;
+            this.PPlan.Width = 120;
+            // 
+            // PExperienceDays
+            // 
+            this.PExperienceDays.FillWeight = 14F;
+            this.PExperienceDays.HeaderText = "Experience Days";
+            this.PExperienceDays.Name = "PExperienceDays";
+            this.PExperienceDays.Width = 140;
+            // 
+            // PLicenseKey
+            // 
+            this.PLicenseKey.FillWeight = 13F;
+            this.PLicenseKey.HeaderText = "License Key";
+            this.PLicenseKey.Name = "PLicenseKey";
+            this.PLicenseKey.Width = 250;
+            // 
+            // PLicenseCode
+            // 
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.PLicenseCode.DefaultCellStyle = dataGridViewCellStyle57;
+            this.PLicenseCode.FillWeight = 14F;
+            this.PLicenseCode.HeaderText = "License Code";
+            this.PLicenseCode.Name = "PLicenseCode";
+            this.PLicenseCode.Width = 250;
+            // 
+            // PName
+            // 
+            this.PName.FillWeight = 10F;
+            this.PName.HeaderText = "Product Name";
+            this.PName.Name = "PName";
+            this.PName.Width = 170;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.Location = new System.Drawing.Point(3, 51);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(805, 1);
+            this.panel5.TabIndex = 448;
+            // 
+            // product_Created
+            // 
+            this.product_Created.FillWeight = 80.45901F;
+            this.product_Created.HeaderText = "Created";
+            this.product_Created.Name = "product_Created";
+            this.product_Created.Width = 120;
+            // 
+            // product_Email
+            // 
+            this.product_Email.FillWeight = 80.45901F;
+            this.product_Email.HeaderText = "Email";
+            this.product_Email.Name = "product_Email";
+            this.product_Email.Width = 170;
+            // 
+            // product_Expiry
+            // 
+            this.product_Expiry.HeaderText = "Expiry";
+            this.product_Expiry.Name = "product_Expiry";
+            this.product_Expiry.Width = 120;
+            // 
+            // product_Plan
+            // 
+            this.product_Plan.HeaderText = "Plan";
+            this.product_Plan.Name = "product_Plan";
+            // 
+            // product_ExperienceDays
+            // 
+            this.product_ExperienceDays.HeaderText = "Experience Days";
+            this.product_ExperienceDays.Name = "product_ExperienceDays";
+            this.product_ExperienceDays.Width = 134;
+            // 
+            // product_LicenseKey
+            // 
+            this.product_LicenseKey.FillWeight = 10F;
+            this.product_LicenseKey.HeaderText = "License Key";
+            this.product_LicenseKey.Name = "product_LicenseKey";
+            this.product_LicenseKey.Width = 255;
+            // 
+            // product_LicenseCode
+            // 
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle51;
+            this.product_LicenseCode.FillWeight = 14F;
+            this.product_LicenseCode.HeaderText = "License Code";
+            this.product_LicenseCode.Name = "product_LicenseCode";
+            this.product_LicenseCode.Width = 255;
+            // 
+            // product_Status
+            // 
+            this.product_Status.FillWeight = 80.45901F;
+            this.product_Status.HeaderText = "Status";
+            this.product_Status.Name = "product_Status";
+            this.product_Status.Width = 120;
+            // 
+            // product_Name
+            // 
+            this.product_Name.FillWeight = 80.45901F;
+            this.product_Name.HeaderText = "Product Name";
+            this.product_Name.Name = "product_Name";
+            this.product_Name.Width = 170;
+            // 
+            // metroPanel3
+            // 
+            this.metroPanel3.BackColor = System.Drawing.Color.White;
+            this.metroPanel3.Controls.Add(this.panel27);
+            this.metroPanel3.Controls.Add(this.panel26);
+            this.metroPanel3.Controls.Add(this.panel25);
+            this.metroPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.metroPanel3.HorizontalScrollbarBarColor = true;
+            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.HorizontalScrollbarSize = 12;
+            this.metroPanel3.Location = new System.Drawing.Point(1, 370);
+            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.metroPanel3.Name = "metroPanel3";
+            this.metroPanel3.Size = new System.Drawing.Size(809, 33);
+            this.metroPanel3.TabIndex = 449;
+            this.metroPanel3.UseCustomBackColor = true;
+            this.metroPanel3.VerticalScrollbarBarColor = true;
+            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.VerticalScrollbarSize = 12;
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel25.Location = new System.Drawing.Point(0, 0);
+            this.panel25.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(809, 3);
+            this.panel25.TabIndex = 383;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel26.Location = new System.Drawing.Point(647, 8);
+            this.panel26.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(1, 20);
+            this.panel26.TabIndex = 384;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel27.Location = new System.Drawing.Point(471, 8);
+            this.panel27.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(1, 20);
+            this.panel27.TabIndex = 385;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 638);
+            this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.buttonProductDownload);
             this.Controls.Add(this.panelLicense);
             this.Controls.Add(this.panelProductGrid);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.separator);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelRegister);
@@ -1327,22 +1378,22 @@
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Main";
             this.Padding = new System.Windows.Forms.Padding(23, 69, 23, 23);
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Silver;
-            this.Load += new System.EventHandler(this.Main_Load);
             this.PanelNav.ResumeLayout(false);
             this.PanelNav.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panelProductGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.productGrid)).EndInit();
             this.panelLicense.ResumeLayout(false);
             this.panelLicense.PerformLayout();
             this.panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.licenseGrid)).EndInit();
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.licenseGrid)).EndInit();
+            this.metroPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1368,7 +1419,7 @@
         private System.Windows.Forms.Label labelRegister;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel separator;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ComboBox comboBoxFilter;
@@ -1403,33 +1454,37 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private MetroFramework.Controls.MetroGrid licenseGrid;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Button buttonUpdateLi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonDownload;
         private System.Windows.Forms.Button buttonProductDownload;
+        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroGrid licenseGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn PName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PExperienceDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn PLicenseCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn PLicenseKey;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PExperienceDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn PPlan;
         private System.Windows.Forms.DataGridViewTextBoxColumn PExpiry;
         private System.Windows.Forms.DataGridViewTextBoxColumn PEmail;
-        private System.Windows.Forms.Button buttonSaveUpdate;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseKey;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Plan;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Expiry;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_Created;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
+        private MetroFramework.Controls.MetroPanel metroPanel3;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel26;
     }
 }
 

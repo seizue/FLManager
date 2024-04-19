@@ -41,3 +41,4 @@ C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.csproj.C
 C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.exe
 C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.pdb
+C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.ProductUpdateForm.resources
