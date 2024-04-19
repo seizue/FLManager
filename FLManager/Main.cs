@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,26 +34,45 @@ namespace FLManager
         public Main()
         {
             InitializeComponent();
+
+            // Get AppData directory path
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            // Create file path
+            string directoryPath = Path.Combine(appDataPath, "FLManager");
+            string filePath = Path.Combine(directoryPath, "generated_data.json");
+
+            // Load selected columns from JSON file
+            userControlDashBoard1.LoadSelectedColumnsFromJson(filePath);
+
+            // You can add this line in your Main constructor or Form_Load event
+            textboxSearch.ButtonClick += textboxSearch_ButtonClick;
+
         }
 
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
+            buttonDashboard.ForeColor = Color.SaddleBrown;
+            buttonDashboard.Font = new Font(buttonDashboard.Font, FontStyle.Bold);
+            buttonProducts.ForeColor = Color.FromArgb(64,64, 64);
+            buttonProducts.Font = new Font(buttonDashboard.Font, FontStyle.Regular);
 
+            userControlDashBoard1.Visible = true;
         }
 
         private void buttonProducts_Click(object sender, EventArgs e)
         {
+            buttonProducts.ForeColor = Color.SaddleBrown;
+            buttonProducts.Font = new Font(buttonDashboard.Font,FontStyle.Bold);
+            buttonDashboard.ForeColor = Color.FromArgb(64, 64, 64);
+            buttonDashboard.Font = new Font(buttonDashboard.Font, FontStyle.Regular);
 
-        }
-
-        private void buttonSettings_Click(object sender, EventArgs e)
-        {
-
+            userControlDashBoard1.Visible = false;
         }
 
         private void labelRegister_Click(object sender, EventArgs e)
         {
-            panel_Indicator.Location = new Point(239, 128);
+            panel_Indicator.Location = new Point(232, 127);
             panel_Indicator.Size = new Size(49, 3);
             panelLicense.Visible = true;
 
@@ -64,7 +84,8 @@ namespace FLManager
 
         private void labelProducts_Click(object sender, EventArgs e)
         {
-            panel_Indicator.Location = new Point(333, 128);
+
+            panel_Indicator.Location = new Point(326, 127);
             panel_Indicator.Size = new Size(66, 3);
             panelLicense.Visible = false;
 
@@ -263,6 +284,8 @@ namespace FLManager
             {
                 MessageBox.Show("JSON file not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            UpdateStatusCounts();
         }
 
 
@@ -456,8 +479,255 @@ namespace FLManager
 
         private void Main_Load(object sender, EventArgs e)
         {
+            // Get AppData directory path
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
+            // Create directory if it doesn't exist
+            string directoryPath = Path.Combine(appDataPath, "FLManager");
+
+            // Create file path
+            string filePath = Path.Combine(directoryPath, "generated_data.json");
+
+            // Check and create JSON file if it doesn't exist
+            CheckAndCreateJsonFile(filePath);
         }
+
+        private void CheckAndCreateJsonFile(string filePath)
+        {
+            // Check if the directory exists, if not, create it
+            string directoryPath = Path.GetDirectoryName(filePath);
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            // Check if the JSON file exists
+            if (!File.Exists(filePath))
+            {
+                // Create a new JSON file
+                File.WriteAllText(filePath, "[]");
+            }
+        }
+
+        private void textboxSearch_ButtonClick(object sender, EventArgs e)
+        {
+            // Get the search keyword from the textbox
+            string keyword = textboxSearch.Text.ToLower();
+
+            // Iterate through each row in the productGrid
+            foreach (DataGridViewRow row in productGrid.Rows)
+            {
+                // Check if any cell in the row contains the search keyword
+                bool rowContainsKeyword = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword))
+                    {
+                        rowContainsKeyword = true;
+                        break;
+                    }
+                }
+
+                // Show or hide the row based on whether it contains the keyword
+                row.Visible = rowContainsKeyword;
+            }
+        }
+
+        private void checkBoxActive_CheckedChanged(object sender, EventArgs e)
+        {
+            FilterRowsByStatus();
+        }
+
+        private void checkBoxInactive_CheckedChanged(object sender, EventArgs e)
+        {
+            FilterRowsByStatus();
+        }
+
+        private void FilterRowsByStatus()
+        {
+            foreach (DataGridViewRow row in productGrid.Rows)
+            {
+                // Get the status value from the "Status" column
+                string status = row.Cells["product_Status"].Value.ToString();
+
+                // Check if the row should be visible based on the status and the state of the checkboxes
+                if ((checkBoxActive.Checked && status == "ACTIVE") || (checkBoxInactive.Checked && status == "INACTIVE"))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterRowsBySelectedCriteria();
+        }
+
+        private void FilterRowsBySelectedCriteria()
+        {
+            // Get the selected criteria from comboBoxFilter
+            string selectedCriteria = comboBoxFilter.SelectedItem.ToString();
+
+            // Determine which column to sort based on the selected criteria
+            string columnName = string.Empty;
+            switch (selectedCriteria)
+            {
+                case "Product Name":
+                    columnName = "product_Name";
+                    break;
+                case "Experience Days":
+                    columnName = "product_ExperienceDays";
+                    break;
+                case "License Code":
+                    columnName = "product_LicenseCode";
+                    break;
+                case "License Key":
+                    columnName = "product_LicenseKey";
+                    break;
+                case "Plan":
+                    columnName = "product_Plan";
+                    break;
+                case "Expiry Date":
+                    columnName = "product_Expiry";
+                    break;
+                case "Email":
+                    columnName = "product_Email";
+                    break;
+                case "Date Generated":
+                    columnName = "DateGenerated";
+                    break;
+                default:
+                    break;
+            }
+
+            // Check if the column name is valid
+            if (!string.IsNullOrEmpty(columnName))
+            {
+                // Sort the DataGridView by the selected column
+                productGrid.Sort(productGrid.Columns[columnName], ListSortDirection.Ascending);
+            }
+        }
+
+        // Export the product list from productGrid
+        private void buttonProductDownload_Click(object sender, EventArgs e)
+        {
+            // Open a SaveFileDialog to choose where to save the CSV file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV files (*.csv)|*.csv";
+            saveFileDialog.Title = "Export CSV";
+            saveFileDialog.FileName = $"product_data_{DateTime.Now.ToString("yyyyMMddHHmmss")}.csv"; // File name with current date and time
+
+            // Set the initial directory for the SaveFileDialog
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Create a StreamWriter to write to the selected file
+                    using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        // Write the header row to the CSV file
+                        string header = string.Join(",", productGrid.Columns.Cast<DataGridViewColumn>().Select(col => col.HeaderText));
+                        writer.WriteLine(header);
+
+                        // Write each row of data to the CSV file
+                        foreach (DataGridViewRow row in productGrid.Rows)
+                        {
+                            string rowData = string.Join(",", row.Cells.Cast<DataGridViewCell>().Select(cell => cell.Value.ToString()));
+                            writer.WriteLine(rowData);
+                        }
+                    }
+
+                    MessageBox.Show("CSV file exported successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error exporting CSV file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        // Export license generated from licenseGrid
+        private void buttonDownload_Click(object sender, EventArgs e)
+        {
+            // Check if there are any rows in licenseGrid
+            if (licenseGrid.Rows.Count == 0)
+            {
+                MessageBox.Show("No data to export.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Open a SaveFileDialog to choose where to save the text file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text files (*.txt)|*.txt";
+            saveFileDialog.Title = "Export Text";
+            saveFileDialog.FileName = $"license_data_{DateTime.Now.ToString("yyyyMMddHHmmss")}.txt"; // Default file name with current date and time
+
+            // Set the initial directory for the SaveFileDialog
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Create a StreamWriter to write to the selected file
+                    using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        // Write the header row to the text file
+                        string header = string.Join("\t", licenseGrid.Columns.Cast<DataGridViewColumn>().Select(col => col.HeaderText)); // Using tab as delimiter
+                        writer.WriteLine(header);
+
+                        // Write each row of data to the text file
+                        foreach (DataGridViewRow row in licenseGrid.Rows)
+                        {
+                            string rowData = string.Join("\t", row.Cells.Cast<DataGridViewCell>().Select(cell => cell.Value.ToString())); // Using tab as delimiter
+                            writer.WriteLine(rowData);
+                        }
+                    }
+
+                    MessageBox.Show("Text file exported successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error exporting text file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void UpdateStatusCounts()
+        {
+            // Initialize count variables
+            int activeCount = 0;
+            int inactiveCount = 0;
+
+            // Iterate through each row in productGrid
+            foreach (DataGridViewRow row in productGrid.Rows)
+            {
+                // Get the status value from the "product_Status" column
+                string status = row.Cells["product_Status"].Value.ToString();
+
+                // Increment the count based on the status
+                if (status == "ACTIVE")
+                {
+                    activeCount++;
+                }
+                else if (status == "INACTIVE")
+                {
+                    inactiveCount++;
+                }
+            }
+
+            // Update the text boxes with the counts
+            textBoxActive.Text = activeCount.ToString();
+            textBoxInActive.Text = inactiveCount.ToString();
+            textBoxALL.Text = (activeCount + inactiveCount).ToString();
+        }
+
     }
 }
 
