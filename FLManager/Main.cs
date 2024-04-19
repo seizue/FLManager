@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FLManager.ProductUpdateForm;
 
 namespace FLManager
 {
@@ -278,8 +279,6 @@ namespace FLManager
             }
         }
 
-    
-
         private void UpdateDataToJsonFile()
         {
             // Get AppData directory path
@@ -304,32 +303,51 @@ namespace FLManager
                 // Deserialize existing JSON data to list of ProductData objects
                 productList = JsonConvert.DeserializeObject<List<ProductData>>(existingData);
 
-                // Update the corresponding entry in the productList
-                int selectedRowIndex = licenseGrid.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = licenseGrid.Rows[selectedRowIndex];
-
-                // Find the corresponding product in the productList and update its properties
-                string licenseCode = selectedRow.Cells["PLicenseCode"].Value.ToString();
-                var productToUpdate = productList.Find(product => product.product_LicenseCode == licenseCode);
-                if (productToUpdate != null)
+                // Check if a row is selected in the productGrid
+                if (productGrid.SelectedRows.Count > 0)
                 {
-                    productToUpdate.product_Name = selectedRow.Cells["PName"].Value.ToString();
-                    productToUpdate.product_ExperienceDays = Convert.ToInt32(selectedRow.Cells["PExperienceDays"].Value);
-                    productToUpdate.product_Plan = selectedRow.Cells["PPlan"].Value.ToString();
-                    productToUpdate.product_Email = selectedRow.Cells["PEmail"].Value.ToString();
+                    // Get the index of the selected row
+                    int selectedRowIndex = productGrid.SelectedRows[0].Index;
+
+                    // Update the corresponding entry in the productList
+                    if (selectedRowIndex >= 0 && selectedRowIndex < productList.Count)
+                    {
+                        // Get the selected row from the productGrid
+                        DataGridViewRow selectedRow = productGrid.Rows[selectedRowIndex];
+
+                        // Find the corresponding product in the productList and update its properties
+                        string licenseCode = selectedRow.Cells["product_LicenseCode"].Value.ToString();
+                        var productToUpdate = productList.Find(product => product.product_LicenseCode == licenseCode);
+                        if (productToUpdate != null)
+                        {
+                            productToUpdate.product_Name = selectedRow.Cells["product_Name"].Value.ToString();
+                            productToUpdate.product_ExperienceDays = Convert.ToInt32(selectedRow.Cells["product_ExperienceDays"].Value);
+                            productToUpdate.product_Plan = selectedRow.Cells["product_Plan"].Value.ToString();
+                            productToUpdate.product_Email = selectedRow.Cells["product_Email"].Value.ToString();
+                        }
+
+                        // Serialize updated data to JSON
+                        string updatedData = JsonConvert.SerializeObject(productList, Formatting.Indented);
+
+                        // Write updated data to the JSON file
+                        File.WriteAllText(filePath, updatedData);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid selected row index.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-
-                // Serialize updated data to JSON
-                string updatedData = JsonConvert.SerializeObject(productList, Formatting.Indented);
-
-                // Write updated data to the JSON file
-                File.WriteAllText(filePath, updatedData);
+                else
+                {
+                    MessageBox.Show("Please select a row in the productGrid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
                 MessageBox.Show("JSON file not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void LoadDataFromJsonFile(string filePath)
         {
@@ -387,6 +405,8 @@ namespace FLManager
            
         }
 
+        // Inside Main form
+
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             // Check if a row is selected
@@ -404,6 +424,9 @@ namespace FLManager
                 updateForm.Email = selectedRow.Cells["product_Email"].Value.ToString();
                 updateForm.SelectedPlan = selectedRow.Cells["product_Plan"].Value.ToString();
 
+                // Subscribe to the SaveButtonClicked event
+                updateForm.SaveButtonClicked += UpdateForm_SaveButtonClicked;
+
                 // Show the ProductUpdateForm
                 updateForm.ShowDialog();
             }
@@ -412,6 +435,22 @@ namespace FLManager
                 MessageBox.Show("Please select a row to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void UpdateForm_SaveButtonClicked(object sender, ProductUpdateEventArgs e)
+        {
+            // Update the selected row in productGrid with the updated values
+            DataGridViewRow selectedRow = productGrid.SelectedRows[0];
+            selectedRow.Cells["product_Name"].Value = e.UpdatedName;
+            selectedRow.Cells["product_ExperienceDays"].Value = e.UpdatedExperienceDays;
+            selectedRow.Cells["product_Email"].Value = e.UpdatedEmail;
+            selectedRow.Cells["product_Plan"].Value = e.UpdatedSelectedPlan;
+
+            UpdateDataToJsonFile();
+
+            // Close the ProductUpdateForm
+            ((ProductUpdateForm)sender).Close();
+        }
+
 
     }
 }

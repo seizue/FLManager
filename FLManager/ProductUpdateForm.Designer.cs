@@ -145,7 +145,7 @@
             this.textBoxExperienceDays.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxExperienceDays.CustomButton.UseSelectable = true;
             this.textBoxExperienceDays.Lines = new string[0];
-            this.textBoxExperienceDays.Location = new System.Drawing.Point(48, 114);
+            this.textBoxExperienceDays.Location = new System.Drawing.Point(50, 184);
             this.textBoxExperienceDays.MaxLength = 32767;
             this.textBoxExperienceDays.Name = "textBoxExperienceDays";
             this.textBoxExperienceDays.PasswordChar = '\0';
@@ -170,7 +170,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(46, 89);
+            this.label6.Location = new System.Drawing.Point(48, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 15);
             this.label6.TabIndex = 423;
@@ -191,7 +191,7 @@
             this.textBoxName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.textBoxName.CustomButton.UseSelectable = true;
             this.textBoxName.Lines = new string[0];
-            this.textBoxName.Location = new System.Drawing.Point(48, 184);
+            this.textBoxName.Location = new System.Drawing.Point(50, 111);
             this.textBoxName.MaxLength = 32767;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
@@ -216,7 +216,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(46, 161);
+            this.label12.Location = new System.Drawing.Point(48, 88);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 15);
             this.label12.TabIndex = 421;
@@ -331,6 +331,7 @@
             this.buttonSaveUpdateForm.TabIndex = 447;
             this.buttonSaveUpdateForm.Text = "SAVE";
             this.buttonSaveUpdateForm.UseVisualStyleBackColor = false;
+            this.buttonSaveUpdateForm.Click += new System.EventHandler(this.buttonSaveUpdateForm_Click);
             // 
             // ProductUpdateForm
             // 
