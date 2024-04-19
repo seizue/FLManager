@@ -158,10 +158,21 @@ namespace FLManager
             // Add DateGenerated to ProductData
             DateTime dateGenerated = DateTime.Now;
 
-            // Create list of ProductData objects
-            List<ProductData> productList = new List<ProductData>
-        {
-            new ProductData
+            // Initialize productList to store existing data
+            List<ProductData> productList = new List<ProductData>();
+
+            // Check if the JSON file exists
+            if (File.Exists(filePath))
+            {
+                // Read existing data from the JSON file
+                string existingData = File.ReadAllText(filePath);
+
+                // Deserialize existing JSON data to list of ProductData objects
+                productList = JsonConvert.DeserializeObject<List<ProductData>>(existingData);
+            }
+
+            // Add new product data to the productList
+            productList.Add(new ProductData
             {
                 product_Name = name,
                 product_ExperienceDays = experienceDays,
@@ -171,13 +182,15 @@ namespace FLManager
                 product_Expiry = expiryDate,
                 product_Email = email,
                 DateGenerated = dateGenerated
-            }
-        };
+            });
 
-            // Serialize data to JSON and write to file
-            string jsonData = JsonConvert.SerializeObject(productList, Formatting.Indented);
-            File.WriteAllText(filePath, jsonData);
+            // Serialize updated data to JSON
+            string updatedData = JsonConvert.SerializeObject(productList, Formatting.Indented);
+
+            // Write updated data to the JSON file
+            File.WriteAllText(filePath, updatedData);
         }
+
 
         private void ClearInputFields()
         {
