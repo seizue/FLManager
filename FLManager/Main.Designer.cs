@@ -33,13 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelNav = new MetroFramework.Controls.MetroPanel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -79,15 +79,6 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.productGrid = new MetroFramework.Controls.MetroGrid();
-            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -132,6 +123,15 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.userControlDashBoard1 = new FLManager.UserControlDashBoard1();
+            this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_LicenseKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
@@ -721,67 +721,6 @@
             this.productGrid.UseCustomBackColor = true;
             this.productGrid.UseCustomForeColor = true;
             this.productGrid.UseStyleColors = true;
-            // 
-            // product_Name
-            // 
-            this.product_Name.FillWeight = 80.45901F;
-            this.product_Name.HeaderText = "Product Name";
-            this.product_Name.Name = "product_Name";
-            this.product_Name.Width = 170;
-            // 
-            // product_Status
-            // 
-            this.product_Status.FillWeight = 80.45901F;
-            this.product_Status.HeaderText = "Status";
-            this.product_Status.Name = "product_Status";
-            this.product_Status.Width = 120;
-            // 
-            // product_LicenseCode
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle3;
-            this.product_LicenseCode.FillWeight = 14F;
-            this.product_LicenseCode.HeaderText = "License Code";
-            this.product_LicenseCode.Name = "product_LicenseCode";
-            this.product_LicenseCode.Width = 255;
-            // 
-            // product_LicenseKey
-            // 
-            this.product_LicenseKey.FillWeight = 10F;
-            this.product_LicenseKey.HeaderText = "License Key";
-            this.product_LicenseKey.Name = "product_LicenseKey";
-            this.product_LicenseKey.Width = 255;
-            // 
-            // product_Plan
-            // 
-            this.product_Plan.HeaderText = "Plan";
-            this.product_Plan.Name = "product_Plan";
-            // 
-            // product_ExperienceDays
-            // 
-            this.product_ExperienceDays.HeaderText = "Experience Days";
-            this.product_ExperienceDays.Name = "product_ExperienceDays";
-            this.product_ExperienceDays.Width = 134;
-            // 
-            // product_Expiry
-            // 
-            this.product_Expiry.HeaderText = "Expiry";
-            this.product_Expiry.Name = "product_Expiry";
-            this.product_Expiry.Width = 120;
-            // 
-            // product_Email
-            // 
-            this.product_Email.FillWeight = 80.45901F;
-            this.product_Email.HeaderText = "Email";
-            this.product_Email.Name = "product_Email";
-            this.product_Email.Width = 170;
-            // 
-            // product_Created
-            // 
-            this.product_Created.FillWeight = 80.45901F;
-            this.product_Created.HeaderText = "Created";
-            this.product_Created.Name = "product_Created";
-            this.product_Created.Width = 120;
             // 
             // panel14
             // 
@@ -1459,6 +1398,67 @@
             this.userControlDashBoard1.Size = new System.Drawing.Size(834, 536);
             this.userControlDashBoard1.TabIndex = 448;
             // 
+            // product_Name
+            // 
+            this.product_Name.FillWeight = 80.45901F;
+            this.product_Name.HeaderText = "Product Name";
+            this.product_Name.Name = "product_Name";
+            this.product_Name.Width = 170;
+            // 
+            // product_Status
+            // 
+            this.product_Status.FillWeight = 80.45901F;
+            this.product_Status.HeaderText = "Status";
+            this.product_Status.Name = "product_Status";
+            this.product_Status.Width = 120;
+            // 
+            // product_LicenseCode
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.product_LicenseCode.DefaultCellStyle = dataGridViewCellStyle3;
+            this.product_LicenseCode.FillWeight = 14F;
+            this.product_LicenseCode.HeaderText = "License Code";
+            this.product_LicenseCode.Name = "product_LicenseCode";
+            this.product_LicenseCode.Width = 258;
+            // 
+            // product_LicenseKey
+            // 
+            this.product_LicenseKey.FillWeight = 10F;
+            this.product_LicenseKey.HeaderText = "License Key";
+            this.product_LicenseKey.Name = "product_LicenseKey";
+            this.product_LicenseKey.Width = 255;
+            // 
+            // product_Plan
+            // 
+            this.product_Plan.HeaderText = "Plan";
+            this.product_Plan.Name = "product_Plan";
+            // 
+            // product_ExperienceDays
+            // 
+            this.product_ExperienceDays.HeaderText = "Experience Days";
+            this.product_ExperienceDays.Name = "product_ExperienceDays";
+            this.product_ExperienceDays.Width = 134;
+            // 
+            // product_Expiry
+            // 
+            this.product_Expiry.HeaderText = "Expiry";
+            this.product_Expiry.Name = "product_Expiry";
+            this.product_Expiry.Width = 120;
+            // 
+            // product_Email
+            // 
+            this.product_Email.FillWeight = 80.45901F;
+            this.product_Email.HeaderText = "Email";
+            this.product_Email.Name = "product_Email";
+            this.product_Email.Width = 170;
+            // 
+            // product_Created
+            // 
+            this.product_Created.FillWeight = 80.45901F;
+            this.product_Created.HeaderText = "Created";
+            this.product_Created.Name = "product_Created";
+            this.product_Created.Width = 120;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1585,15 +1585,6 @@
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseKey;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Plan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Expiry;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_Created;
         private System.Windows.Forms.TextBox textBoxALL;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
@@ -1604,6 +1595,15 @@
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Panel panel1;
         private UserControlDashBoard1 userControlDashBoard1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_LicenseKey;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Plan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_ExperienceDays;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Expiry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_Created;
     }
 }
 
