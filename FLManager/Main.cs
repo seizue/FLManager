@@ -57,6 +57,19 @@ namespace FLManager
             buttonProducts.ForeColor = Color.FromArgb(64,64, 64);
             buttonProducts.Font = new Font(buttonDashboard.Font, FontStyle.Regular);
 
+            // Get AppData directory path
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            // Create directory if it doesn't exist
+            string directoryPath = Path.Combine(appDataPath, "FLManager");
+            Directory.CreateDirectory(directoryPath);
+
+            // Create file path
+            string filePath = Path.Combine(directoryPath, "generated_data.json");
+
+            // Load data from JSON file into productGrid
+            LoadDataFromJsonFile(filePath);
+
             userControlDashBoard1.Visible = true;
         }
 
@@ -93,19 +106,6 @@ namespace FLManager
             buttonDelete.Visible= true;
             buttonProductDownload.Visible = true;
             separator.Visible = true;
-
-            // Get AppData directory path
-            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-            // Create directory if it doesn't exist
-            string directoryPath = Path.Combine(appDataPath, "FLManager");
-            Directory.CreateDirectory(directoryPath);
-
-            // Create file path
-            string filePath = Path.Combine(directoryPath, "generated_data.json");
-
-            // Load data from JSON file into productGrid
-            LoadDataFromJsonFile(filePath);
         }
 
         private string GenerateUniqueLicenseString()
@@ -232,7 +232,7 @@ namespace FLManager
             textBoxEmail.Clear();
             comboBoxPlan.SelectedIndex = -1;
         }
-      
+
 
         //Loading the json file from product list datagrid
         private void LoadDataFromJsonFile(string filePath)
@@ -261,7 +261,7 @@ namespace FLManager
                     // Add data to productGrid using column names
                     DataGridViewRow row = new DataGridViewRow();
                     row.CreateCells(productGrid,
-                        product.product_Name,         
+                        product.product_Name,
                         status,
                         product.product_LicenseCode,
                         product.product_LicenseKey,
@@ -270,7 +270,6 @@ namespace FLManager
                         product.product_Expiry.ToString("yyyy-MM-dd"),
                         product.product_Email,
                         product.DateGenerated.ToString("yyyy-MM-dd")
-                       
                     );
 
                     // Set the fore color for the status cell
@@ -287,6 +286,7 @@ namespace FLManager
 
             UpdateStatusCounts();
         }
+
 
 
         //For updating the json file in product list datagrid
@@ -490,6 +490,10 @@ namespace FLManager
 
             // Check and create JSON file if it doesn't exist
             CheckAndCreateJsonFile(filePath);
+
+            // Load data from JSON file into productGrid
+            LoadDataFromJsonFile(filePath);
+            UpdateStatusCounts();
         }
 
         private void CheckAndCreateJsonFile(string filePath)
@@ -726,7 +730,13 @@ namespace FLManager
             textBoxActive.Text = activeCount.ToString();
             textBoxInActive.Text = inactiveCount.ToString();
             textBoxALL.Text = (activeCount + inactiveCount).ToString();
+
+            // Update the UserControl's text boxes with the counts
+            userControlDashBoard1.UpdateActivePlanCount(activeCount);
+            userControlDashBoard1.UpdateInactivePlanCount(inactiveCount);
+            userControlDashBoard1.UpdateOverallCustomerCount(activeCount + inactiveCount);
         }
+
 
     }
 }
