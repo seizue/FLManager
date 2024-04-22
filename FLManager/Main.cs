@@ -416,16 +416,15 @@ namespace FLManager
 
 
         public void refresh()
-        {
-            // Get AppData directory path
+        {         
             string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-            // Create file path
             string directoryPath = Path.Combine(appDataPath, "FLManager");
             string filePath = Path.Combine(directoryPath, "generated_data.json");
+
             // Update the DashboardGrid in the user control with the updated data
             userControlDashBoard1.LoadSelectedColumnsFromJson(filePath);
 
+            // Update loading the jsonfile
             LoadDataFromJsonFile(filePath);
         }
 
