@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
             this.DashBoardGrid = new MetroFramework.Controls.MetroGrid();
             this.product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_ExperienceDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_Expiry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxActivePlan = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.textBoxInactivePlan = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -60,6 +62,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.textBoxOverallCustomer = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -67,9 +70,6 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBoxActivePlan = new System.Windows.Forms.TextBox();
-            this.textBoxInactivePlan = new System.Windows.Forms.TextBox();
-            this.textBoxOverallCustomer = new System.Windows.Forms.TextBox();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DashBoardGrid)).BeginInit();
             this.panel1.SuspendLayout();
@@ -92,6 +92,106 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(685, 275);
             this.panel20.TabIndex = 422;
+            // 
+            // DashBoardGrid
+            // 
+            this.DashBoardGrid.AllowUserToAddRows = false;
+            this.DashBoardGrid.AllowUserToResizeColumns = false;
+            this.DashBoardGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.DashBoardGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DashBoardGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            this.DashBoardGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DashBoardGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DashBoardGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DashBoardGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DashBoardGrid.ColumnHeadersHeight = 48;
+            this.DashBoardGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.product_Name,
+            this.product_ExperienceDays,
+            this.product_Plan,
+            this.product_Expiry,
+            this.product_Email});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DashBoardGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DashBoardGrid.EnableHeadersVisualStyles = false;
+            this.DashBoardGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.DashBoardGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DashBoardGrid.Location = new System.Drawing.Point(3, 4);
+            this.DashBoardGrid.MultiSelect = false;
+            this.DashBoardGrid.Name = "DashBoardGrid";
+            this.DashBoardGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DashBoardGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DashBoardGrid.RowHeadersVisible = false;
+            this.DashBoardGrid.RowHeadersWidth = 5;
+            this.DashBoardGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
+            this.DashBoardGrid.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DashBoardGrid.RowTemplate.Height = 23;
+            this.DashBoardGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DashBoardGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DashBoardGrid.Size = new System.Drawing.Size(679, 264);
+            this.DashBoardGrid.TabIndex = 392;
+            this.DashBoardGrid.UseCustomBackColor = true;
+            this.DashBoardGrid.UseCustomForeColor = true;
+            this.DashBoardGrid.UseStyleColors = true;
+            // 
+            // product_Name
+            // 
+            this.product_Name.FillWeight = 80.45901F;
+            this.product_Name.HeaderText = "Product Name";
+            this.product_Name.Name = "product_Name";
+            this.product_Name.Width = 200;
+            // 
+            // product_ExperienceDays
+            // 
+            this.product_ExperienceDays.HeaderText = "Experience Days";
+            this.product_ExperienceDays.Name = "product_ExperienceDays";
+            this.product_ExperienceDays.Width = 135;
+            // 
+            // product_Plan
+            // 
+            this.product_Plan.HeaderText = "Plan";
+            this.product_Plan.Name = "product_Plan";
+            this.product_Plan.Width = 140;
+            // 
+            // product_Expiry
+            // 
+            this.product_Expiry.HeaderText = "Expiry";
+            this.product_Expiry.Name = "product_Expiry";
+            this.product_Expiry.Width = 122;
+            // 
+            // product_Email
+            // 
+            this.product_Email.FillWeight = 80.45901F;
+            this.product_Email.HeaderText = "Email";
+            this.product_Email.Name = "product_Email";
+            this.product_Email.Width = 200;
             // 
             // panel21
             // 
@@ -133,106 +233,6 @@
             this.panel24.Size = new System.Drawing.Size(685, 1);
             this.panel24.TabIndex = 382;
             // 
-            // DashBoardGrid
-            // 
-            this.DashBoardGrid.AllowUserToAddRows = false;
-            this.DashBoardGrid.AllowUserToResizeColumns = false;
-            this.DashBoardGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle56.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.DashBoardGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle56;
-            this.DashBoardGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
-            this.DashBoardGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DashBoardGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DashBoardGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Bahnschrift", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DashBoardGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle57;
-            this.DashBoardGrid.ColumnHeadersHeight = 48;
-            this.DashBoardGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.product_Name,
-            this.product_ExperienceDays,
-            this.product_Plan,
-            this.product_Expiry,
-            this.product_Email});
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DashBoardGrid.DefaultCellStyle = dataGridViewCellStyle58;
-            this.DashBoardGrid.EnableHeadersVisualStyles = false;
-            this.DashBoardGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.DashBoardGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.DashBoardGrid.Location = new System.Drawing.Point(3, 4);
-            this.DashBoardGrid.MultiSelect = false;
-            this.DashBoardGrid.Name = "DashBoardGrid";
-            this.DashBoardGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DashBoardGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle59;
-            this.DashBoardGrid.RowHeadersVisible = false;
-            this.DashBoardGrid.RowHeadersWidth = 5;
-            this.DashBoardGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle60.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 9.75F);
-            this.DashBoardGrid.RowsDefaultCellStyle = dataGridViewCellStyle60;
-            this.DashBoardGrid.RowTemplate.Height = 23;
-            this.DashBoardGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DashBoardGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DashBoardGrid.Size = new System.Drawing.Size(679, 238);
-            this.DashBoardGrid.TabIndex = 392;
-            this.DashBoardGrid.UseCustomBackColor = true;
-            this.DashBoardGrid.UseCustomForeColor = true;
-            this.DashBoardGrid.UseStyleColors = true;
-            // 
-            // product_Name
-            // 
-            this.product_Name.FillWeight = 80.45901F;
-            this.product_Name.HeaderText = "Product Name";
-            this.product_Name.Name = "product_Name";
-            this.product_Name.Width = 200;
-            // 
-            // product_ExperienceDays
-            // 
-            this.product_ExperienceDays.HeaderText = "Experience Days";
-            this.product_ExperienceDays.Name = "product_ExperienceDays";
-            this.product_ExperienceDays.Width = 135;
-            // 
-            // product_Plan
-            // 
-            this.product_Plan.HeaderText = "Plan";
-            this.product_Plan.Name = "product_Plan";
-            this.product_Plan.Width = 140;
-            // 
-            // product_Expiry
-            // 
-            this.product_Expiry.HeaderText = "Expiry";
-            this.product_Expiry.Name = "product_Expiry";
-            this.product_Expiry.Width = 122;
-            // 
-            // product_Email
-            // 
-            this.product_Email.FillWeight = 80.45901F;
-            this.product_Email.HeaderText = "Email";
-            this.product_Email.Name = "product_Email";
-            this.product_Email.Width = 200;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -259,6 +259,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(209, 75);
             this.panel1.TabIndex = 424;
+            // 
+            // textBoxActivePlan
+            // 
+            this.textBoxActivePlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            this.textBoxActivePlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxActivePlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
+            this.textBoxActivePlan.ForeColor = System.Drawing.Color.SeaGreen;
+            this.textBoxActivePlan.Location = new System.Drawing.Point(21, 30);
+            this.textBoxActivePlan.Name = "textBoxActivePlan";
+            this.textBoxActivePlan.ReadOnly = true;
+            this.textBoxActivePlan.Size = new System.Drawing.Size(52, 33);
+            this.textBoxActivePlan.TabIndex = 429;
+            this.textBoxActivePlan.Text = "-";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FLManager.Properties.Resources.landlord_24px;
+            this.pictureBox1.Location = new System.Drawing.Point(169, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 426;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(18, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.TabIndex = 424;
+            this.label1.Text = "Active Plans";
             // 
             // panel2
             // 
@@ -300,28 +335,6 @@
             this.panel5.Size = new System.Drawing.Size(209, 1);
             this.panel5.TabIndex = 382;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(18, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
-            this.label1.TabIndex = 424;
-            this.label1.Text = "Active Plans";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FLManager.Properties.Resources.landlord_24px;
-            this.pictureBox1.Location = new System.Drawing.Point(169, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 426;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
@@ -336,6 +349,19 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(209, 75);
             this.panel6.TabIndex = 425;
+            // 
+            // textBoxInactivePlan
+            // 
+            this.textBoxInactivePlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            this.textBoxInactivePlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxInactivePlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
+            this.textBoxInactivePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            this.textBoxInactivePlan.Location = new System.Drawing.Point(21, 30);
+            this.textBoxInactivePlan.Name = "textBoxInactivePlan";
+            this.textBoxInactivePlan.ReadOnly = true;
+            this.textBoxInactivePlan.Size = new System.Drawing.Size(52, 33);
+            this.textBoxInactivePlan.TabIndex = 430;
+            this.textBoxInactivePlan.Text = "-";
             // 
             // pictureBox2
             // 
@@ -355,7 +381,7 @@
             this.label5.Location = new System.Drawing.Point(18, 11);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
+            this.label5.Size = new System.Drawing.Size(77, 16);
             this.label5.TabIndex = 424;
             this.label5.Text = "Inactive Plans";
             // 
@@ -414,6 +440,19 @@
             this.panel11.Size = new System.Drawing.Size(209, 75);
             this.panel11.TabIndex = 426;
             // 
+            // textBoxOverallCustomer
+            // 
+            this.textBoxOverallCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(253)))));
+            this.textBoxOverallCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxOverallCustomer.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
+            this.textBoxOverallCustomer.ForeColor = System.Drawing.Color.SteelBlue;
+            this.textBoxOverallCustomer.Location = new System.Drawing.Point(21, 30);
+            this.textBoxOverallCustomer.Name = "textBoxOverallCustomer";
+            this.textBoxOverallCustomer.ReadOnly = true;
+            this.textBoxOverallCustomer.Size = new System.Drawing.Size(52, 33);
+            this.textBoxOverallCustomer.TabIndex = 431;
+            this.textBoxOverallCustomer.Text = "-";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FLManager.Properties.Resources.user_24px;
@@ -432,7 +471,7 @@
             this.label7.Location = new System.Drawing.Point(18, 11);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 16);
+            this.label7.Size = new System.Drawing.Size(95, 16);
             this.label7.TabIndex = 424;
             this.label7.Text = "Overall Customer";
             // 
@@ -484,45 +523,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(685, 1);
             this.panel16.TabIndex = 428;
-            // 
-            // textBoxActivePlan
-            // 
-            this.textBoxActivePlan.BackColor = System.Drawing.Color.White;
-            this.textBoxActivePlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxActivePlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
-            this.textBoxActivePlan.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBoxActivePlan.Location = new System.Drawing.Point(21, 30);
-            this.textBoxActivePlan.Name = "textBoxActivePlan";
-            this.textBoxActivePlan.ReadOnly = true;
-            this.textBoxActivePlan.Size = new System.Drawing.Size(52, 33);
-            this.textBoxActivePlan.TabIndex = 429;
-            this.textBoxActivePlan.Text = "-";
-            // 
-            // textBoxInactivePlan
-            // 
-            this.textBoxInactivePlan.BackColor = System.Drawing.Color.White;
-            this.textBoxInactivePlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxInactivePlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
-            this.textBoxInactivePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            this.textBoxInactivePlan.Location = new System.Drawing.Point(21, 30);
-            this.textBoxInactivePlan.Name = "textBoxInactivePlan";
-            this.textBoxInactivePlan.ReadOnly = true;
-            this.textBoxInactivePlan.Size = new System.Drawing.Size(52, 33);
-            this.textBoxInactivePlan.TabIndex = 430;
-            this.textBoxInactivePlan.Text = "-";
-            // 
-            // textBoxOverallCustomer
-            // 
-            this.textBoxOverallCustomer.BackColor = System.Drawing.Color.White;
-            this.textBoxOverallCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxOverallCustomer.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F);
-            this.textBoxOverallCustomer.ForeColor = System.Drawing.Color.SteelBlue;
-            this.textBoxOverallCustomer.Location = new System.Drawing.Point(21, 30);
-            this.textBoxOverallCustomer.Name = "textBoxOverallCustomer";
-            this.textBoxOverallCustomer.ReadOnly = true;
-            this.textBoxOverallCustomer.Size = new System.Drawing.Size(52, 33);
-            this.textBoxOverallCustomer.TabIndex = 431;
-            this.textBoxOverallCustomer.Text = "-";
             // 
             // UserControlDashBoard1
             // 

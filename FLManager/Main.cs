@@ -67,6 +67,8 @@ namespace FLManager
             // Create file path
             string filePath = Path.Combine(directoryPath, "generated_data.json");
 
+            refresh(); 
+
             // Load data from JSON file into productGrid
             LoadDataFromJsonFile(filePath);
 
@@ -80,7 +82,9 @@ namespace FLManager
             buttonDashboard.ForeColor = Color.FromArgb(64, 64, 64);
             buttonDashboard.Font = new Font(buttonDashboard.Font, FontStyle.Regular);
 
+            refresh();
             userControlDashBoard1.Visible = false;
+            
         }
 
         private void labelRegister_Click(object sender, EventArgs e)
@@ -106,6 +110,9 @@ namespace FLManager
             buttonDelete.Visible= true;
             buttonProductDownload.Visible = true;
             separator.Visible = true;
+            // Load data from JSON file into productGrid
+          
+            refresh();
         }
 
         private string GenerateUniqueLicenseString()
@@ -398,11 +405,28 @@ namespace FLManager
             selectedRow.Cells["product_ExperienceDays"].Value = e.UpdatedExperienceDays;
             selectedRow.Cells["product_Email"].Value = e.UpdatedEmail;
             selectedRow.Cells["product_Plan"].Value = e.UpdatedSelectedPlan;
-
+   
             UpdateDataToJsonFile();
+
+            refresh();
 
             // Close the ProductUpdateForm
             ((ProductUpdateForm)sender).Close();
+        }
+
+
+        public void refresh()
+        {
+            // Get AppData directory path
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            // Create file path
+            string directoryPath = Path.Combine(appDataPath, "FLManager");
+            string filePath = Path.Combine(directoryPath, "generated_data.json");
+            // Update the DashboardGrid in the user control with the updated data
+            userControlDashBoard1.LoadSelectedColumnsFromJson(filePath);
+
+            LoadDataFromJsonFile(filePath);
         }
 
 

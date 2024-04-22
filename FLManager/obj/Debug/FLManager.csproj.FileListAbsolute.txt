@@ -60,3 +60,4 @@ D:\Venus\Repos\FLManager\FLManager\FLManager\obj\Debug\FLManager.csproj.CoreComp
 D:\Venus\Repos\FLManager\FLManager\FLManager\obj\Debug\FLManager.csproj.Up2Date
 D:\Venus\Repos\FLManager\FLManager\FLManager\obj\Debug\FLManager.exe
 D:\Venus\Repos\FLManager\FLManager\FLManager\obj\Debug\FLManager.pdb
+C:\Users\Admin\Documents\GitHub\FLManager\FLManager\obj\Debug\FLManager.UserControlDashBoard1.resources
